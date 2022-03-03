@@ -1,2 +1,0 @@
-# COPCO
-Energia Renovable

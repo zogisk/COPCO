@@ -30,8 +30,14 @@
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Avisame!</button></div>
+                            <div class="row input-group-newsletter">
+                                <div class="col-9"><input class="form-control" id="nombre" type="text" placeholder="Ingresa tu nombre..." aria-label="Ingresa tu nombre..." data-sb-validations="required,nombre" /></div>
+                                <div class="col-9"><input class="form-control" id="telf" type="tel" placeholder="75353535353" aria-label="Telefono para contactarte..." data-sb-validations="required,telf" /></div>
+                                <div class="col-9"><input class="form-control" id="email" type="email" placeholder="Correo electronico..." aria-label="Correo electronico de contracto..." data-sb-validations="required,email" /></div>
+                            <div class="row order-last input-group-newsletter">
+                                <div class="col-auto"><button class="btn btn-warning disabled" id="submitButton" type="submit">Avisame!</button></div>
+                            </div>
+                            </div>
                         </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:required">Correo requerido</div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Correo no valido.</div>
@@ -60,10 +66,10 @@
         <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
         <div class="social-icons">
             <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         <!-- Bootstrap core JS-->

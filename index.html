@@ -1,85 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>COPCO - Energia Solar</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4" style="color:yellow">COPCO</h1>
-                    <p class="mb-4">Energia solar</p>
-                    <p class="mb-5">Te brindamos nuestros servicios de para que aprobeches la energia que te brinda el sol de una manera que puedas aprobecharla en todo sentido</p>
-                    <p class="mb-4">Solo brinanos tus datos en los siguientes campos y nosotros te contactaremos...</p>
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="row input-group-newsletter">
-                                <div class="col-9"><input class="form-control" id="nombre" type="text" placeholder="Ingresa tu nombre..." aria-label="Ingresa tu nombre..." data-sb-validations="required,nombre" /></div>
-                                <div class="col-9"><input class="form-control" id="telf" type="tel" placeholder="75353535353" aria-label="Telefono para contactarte..." data-sb-validations="required,telf" /></div>
-                                <div class="col-9"><input class="form-control" id="email" type="email" placeholder="Correo electronico..." aria-label="Correo electronico de contracto..." data-sb-validations="required,email" /></div>
-                            <div class="row order-last input-group-newsletter">
-                                <div class="col-auto"><button class="btn btn-warning disabled" id="submitButton" type="submit">Avisame!</button></div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">Correo requerido</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Correo no valido.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">¡Registrado correctamente!</div>
-                                Tambien siguenos en nuestras redes sociales.
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
-                </div>
-            </div>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COPCO - Energia Solar</title>
+  <script defer type="text/javascript" src="./script.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!--BARRA DE NAVEGACION-->
+  <nav class="yellow" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo COPCO</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Quien somos</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contactar</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Quien somos</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contactar</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<!--Inicio-->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header warning center yellow-text text-lighten-2">COPCO</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Energia Solar</h5>
         </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-warning m-3" href="#!"><i class="fab fa-whatsapp"></i></a>
-            </div>
+        <br>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Ahorro de Energia</h5>
+
+            <p class="light">Nos comprometemos a que tu recibo de energia sea reducido a lo minimo.</p>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Asesoria</h5>
+
+            <p class="light">Te asesoramos y te explicamos de la manera mas honesta.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Instalaciones seguras</h5>
+
+            <p class="light">Contamos con certificaciones de seguridad para tu seguridad.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Permitenos contactarte...</h4>
+          <p class="left-align light">
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">phone</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Telefono</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Correo</label>
+                      </div>
+                  </div>
+                </form>
+              </div>
+          </p>
+          <button class="btn waves-effect yellow black-text" type="submit" name="action">Avisame!
+            <i class="material-icons center">send</i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Portafolio de Evidencia</h5>
+      </div>
+    </div>
+  </div>
+  <div class="carousel center">
+    <a class="carousel-item" href="#one!"><img src="1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="3.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="4.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="5.jpg"></a>
+</div>
+
+<!--BOTON FLOTANTE-->
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large light-blue darken-3">
+      <i class="large material-icons">whatsapp</i>
+    </a>
+  </div>
+
+  <footer class="page-footer light-blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Somos...</h5>
+          <p class="grey-text text-lighten-4">Un equipo de trabajo el cual pone a tu disposicion la venta e instalacion de equipos de aire acondicionado.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Otros contactos</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contactanos</h5>
+          <ul>
+            <li><a class="white-text" href="#!"><i class="material-icons prefix">phone</i> 753535353</a></li>
+            <li><a class="white-text" href="#!"><i class="material-icons prefix">facebook</i> Facebook</a></li>
+            <li><a class="white-text" href="#!"><i class="material-icons prefix">instagram</i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Hecho por <a class="brown-text yellow" href="http://coolmenalab.com/">Coolmenalab</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
